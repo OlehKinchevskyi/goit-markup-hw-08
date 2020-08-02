@@ -1,0 +1,80 @@
+.contacts {
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 305px;
+  }
+
+  .item {
+    margin: 0;
+    padding: 0;
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+
+      font-size: 12px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 1.14;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  .item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+  &-icon {
+    margin-right: 8px;
+    fill: currentColor;
+
+    &.mail {
+      width: 16px;
+      height: 11px;
+    }
+    &.phone {
+      width: 10px;
+      height: 15px;
+    }
+  }
+
+  .item:hover,
+  .item:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,21 @@
+body {
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+  font-family: $font-family;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    list-style: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
